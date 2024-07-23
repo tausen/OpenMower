@@ -7,7 +7,83 @@
  <link rel="icon" href="favicon.ico">
 </head>
 <body>
-<table class="output-table">
+<div id="theSideNav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <ul>
+  <li><a href="OpenMowerMainboard-navigate_PCB.html">PCB</a></li>
+  <ul>
+   <li><a href="OpenMowerMainboard-navigate_PCB_docs.html">docs</a></li>
+   <ul>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#drc">drc</a></li>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#diff_pcb">diff_pcb</a></li>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#kiri">kiri</a></li>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#pcbdraw_svg">pcbdraw_svg</a></li>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#pcbdraw_png">pcbdraw_png</a></li>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#pcbdraw_svg_bottom">pcbdraw_svg_bottom</a></li>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#pcbdraw_png_bottom">pcbdraw_png_bottom</a></li>
+   </ul>
+   <li><a href="OpenMowerMainboard-navigate_PCB_fabrication.html">fabrication</a></li>
+   <ul>
+    <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_drill.html">drill</a></li>
+    <ul>
+     <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_drill.html#write_gerber_drill">write_gerber_drill</a></li>
+    </ul>
+    <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_gerber.html">gerber</a></li>
+    <ul>
+     <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_gerber.html#write_gerber">write_gerber</a></li>
+    </ul>
+    <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_assembly.html">assembly</a></li>
+    <ul>
+     <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_assembly.html#position">position</a></li>
+     <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_assembly.html#ibom">ibom</a></li>
+    </ul>
+   </ul>
+   <li><a href="OpenMowerMainboard-navigate_PCB_3D.html">3D</a></li>
+   <ul>
+    <li><a href="OpenMowerMainboard-navigate_PCB_3D.html#render_3d">render_3d</a></li>
+   </ul>
+  </ul>
+  <li><a href="OpenMowerMainboard-navigate_Schematic.html">Schematic</a></li>
+  <ul>
+   <li><a href="OpenMowerMainboard-navigate_Schematic_docs.html">docs</a></li>
+   <ul>
+    <li><a href="OpenMowerMainboard-navigate_Schematic_docs.html#erc">erc</a></li>
+    <li><a href="OpenMowerMainboard-navigate_Schematic_docs.html#diff_sch">diff_sch</a></li>
+    <li><a href="OpenMowerMainboard-navigate_Schematic_docs.html#kiri">kiri</a></li>
+    <li><a href="OpenMowerMainboard-navigate_Schematic_docs.html#pdf_sch_print">pdf_sch_print</a></li>
+   </ul>
+   <li><a href="OpenMowerMainboard-navigate_Schematic_BoM.html">BoM</a></li>
+   <ul>
+    <li><a href="OpenMowerMainboard-navigate_Schematic_BoM.html#ibom">ibom</a></li>
+   </ul>
+  </ul>
+  <li><a href="OpenMowerMainboard-navigate_Compress.html">Compress</a></li>
+  <ul>
+   <li><a href="OpenMowerMainboard-navigate_Compress.html#gerber">gerber</a></li>
+  </ul>
+ </ul>
+</div>
+<div id="theTopMenu" class="topmenu">
+ <table style="width:100%">
+  <tr>
+   <td valign="top" align="left">
+    <span id="bmenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+   </td>
+   <td>
+     <a href="https://github.com/INTI-CMNB/KiBot/">
+     <img src="images/logo.png" alt="Logo" width="185" height="100">
+     </a>
+   </td>
+   <td>
+     <a href="https://github.com/tausen/OpenMower">
+     <span style="font-size:30px;">OpenMowerMainboard</span>
+     </a>
+   </td>
+  </tr>
+ </table>
+</div>
+<div id="main">
+<table id="position" class="output-table">
 <thead><tr><th colspan="12">Position: Generates the file with position information for the PCB components, used by the pick and place machine.</th></tr></thead>
 <tbody><tr>
 <td class="out-cell" colspan="1"><a href="../release/OpenMowerMainboard-top_pos.csv"><table class="out-img"><tr><td><img src="images/file_csv_64.png" alt="OpenMowerMainboard-top_pos.csv" width="64" height="64"></td></tr><tr><td class="td-small">OpenMowerMainboard-top_pos.csv</td></tr></table></a></td>
@@ -30,10 +106,10 @@
 </tr>
 </tbody>
 </table>
-<table class="output-table">
+<table id="ibom" class="output-table">
 <thead><tr><th colspan="12">Ibom: Generates an interactive web page useful to identify the position of the components in the PCB.</th></tr></thead>
 <tbody><tr>
-<td class="out-cell" colspan="12"><a href="../release/OpenMowerMainboard-ibom.html"><table class="out-img"><tr><td><img src="images/file_html_64.png" alt="OpenMowerMainboard-ibom.html" width="64" height="64"></td></tr><tr><td class="td-small">OpenMowerMainboard-ibom.html</td></tr></table></a></td>
+<td class="out-cell" colspan="12"><a href="../release/OpenMowerMainboard-ibom.html"><table class="out-img"><tr><td><img src="images/ibom_64.png" alt="OpenMowerMainboard-ibom.html" width="64" height="64"></td></tr><tr><td class="td-small">OpenMowerMainboard-ibom.html</td></tr></table></a></td>
 </tr>
 <tr>
 <td></td>
@@ -51,5 +127,34 @@
 </tr>
 </tbody>
 </table>
-<table class="nav-table"> <tr>  <td><a href="OpenMowerMainboard-navigate_PCB_fabrication.html"><img src="images/back_64.png" width="64" height="64" alt="go back"></a></td>  <td><a href="OpenMowerMainboard-navigate.html"><img src="images/home_64.png" width="64" height="64" alt="go home"></a></td> </tr></table><p class="generator">Generated by <a href="https://github.com/INTI-CMNB/KiBot/">KiBot</a> v1.6.1</p></body>
+<table class="nav-table"> <tr>  <td><a href="OpenMowerMainboard-navigate_PCB_fabrication.html"><img src="images/back_64.png" width="64" height="64" alt="go back"></a></td>  <td><a href="OpenMowerMainboard-navigate.html"><img src="images/home_64.png" width="64" height="64" alt="go home"></a></td> </tr></table><p class="generator">Generated by <a href="https://github.com/INTI-CMNB/KiBot/">KiBot</a> v1.7.0</p>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("theSideNav").style.width = "360px";
+  document.getElementById("main").style.marginLeft = "360px";
+  document.getElementById("theTopMenu").style.marginLeft = "360px";
+  document.getElementById("bmenu").style.display = "none";
+}
+
+function closeNav() {
+  document.getElementById("theSideNav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("theTopMenu").style.marginLeft = "0";
+  document.getElementById("bmenu").style.display = "block";
+}
+
+function ScrollUp() {
+  /* When we come here from the navbar we must scroll to avoid the top menu */
+  var p = document.getElementById("main");
+  var style = p.currentStyle || window.getComputedStyle(p);
+  var m_top = parseInt(style.marginTop)
+
+  window.scrollBy(0, -(m_top + 5));
+}
+
+window.onload = ScrollUp;
+</script>
+</body>
 </html>
