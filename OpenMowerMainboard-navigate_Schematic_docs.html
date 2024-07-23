@@ -7,10 +7,86 @@
  <link rel="icon" href="favicon.ico">
 </head>
 <body>
-<table class="output-table">
-<thead><tr><th colspan="12">Diff pcb: Generates a PDF with the differences between two PCBs.</th></tr></thead>
+<div id="theSideNav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <ul>
+  <li><a href="OpenMowerMainboard-navigate_PCB.html">PCB</a></li>
+  <ul>
+   <li><a href="OpenMowerMainboard-navigate_PCB_docs.html">docs</a></li>
+   <ul>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#drc">drc</a></li>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#diff_pcb">diff_pcb</a></li>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#kiri">kiri</a></li>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#pcbdraw_svg">pcbdraw_svg</a></li>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#pcbdraw_png">pcbdraw_png</a></li>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#pcbdraw_svg_bottom">pcbdraw_svg_bottom</a></li>
+    <li><a href="OpenMowerMainboard-navigate_PCB_docs.html#pcbdraw_png_bottom">pcbdraw_png_bottom</a></li>
+   </ul>
+   <li><a href="OpenMowerMainboard-navigate_PCB_fabrication.html">fabrication</a></li>
+   <ul>
+    <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_drill.html">drill</a></li>
+    <ul>
+     <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_drill.html#write_gerber_drill">write_gerber_drill</a></li>
+    </ul>
+    <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_gerber.html">gerber</a></li>
+    <ul>
+     <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_gerber.html#write_gerber">write_gerber</a></li>
+    </ul>
+    <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_assembly.html">assembly</a></li>
+    <ul>
+     <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_assembly.html#position">position</a></li>
+     <li><a href="OpenMowerMainboard-navigate_PCB_fabrication_assembly.html#ibom">ibom</a></li>
+    </ul>
+   </ul>
+   <li><a href="OpenMowerMainboard-navigate_PCB_3D.html">3D</a></li>
+   <ul>
+    <li><a href="OpenMowerMainboard-navigate_PCB_3D.html#render_3d">render_3d</a></li>
+   </ul>
+  </ul>
+  <li><a href="OpenMowerMainboard-navigate_Schematic.html">Schematic</a></li>
+  <ul>
+   <li><a href="OpenMowerMainboard-navigate_Schematic_docs.html">docs</a></li>
+   <ul>
+    <li><a href="OpenMowerMainboard-navigate_Schematic_docs.html#erc">erc</a></li>
+    <li><a href="OpenMowerMainboard-navigate_Schematic_docs.html#diff_sch">diff_sch</a></li>
+    <li><a href="OpenMowerMainboard-navigate_Schematic_docs.html#kiri">kiri</a></li>
+    <li><a href="OpenMowerMainboard-navigate_Schematic_docs.html#pdf_sch_print">pdf_sch_print</a></li>
+   </ul>
+   <li><a href="OpenMowerMainboard-navigate_Schematic_BoM.html">BoM</a></li>
+   <ul>
+    <li><a href="OpenMowerMainboard-navigate_Schematic_BoM.html#ibom">ibom</a></li>
+   </ul>
+  </ul>
+  <li><a href="OpenMowerMainboard-navigate_Compress.html">Compress</a></li>
+  <ul>
+   <li><a href="OpenMowerMainboard-navigate_Compress.html#gerber">gerber</a></li>
+  </ul>
+ </ul>
+</div>
+<div id="theTopMenu" class="topmenu">
+ <table style="width:100%">
+  <tr>
+   <td valign="top" align="left">
+    <span id="bmenu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+   </td>
+   <td>
+     <a href="https://github.com/INTI-CMNB/KiBot/">
+     <img src="images/logo.png" alt="Logo" width="185" height="100">
+     </a>
+   </td>
+   <td>
+     <a href="https://github.com/tausen/OpenMower">
+     <span style="font-size:30px;">OpenMowerMainboard</span>
+     </a>
+   </td>
+  </tr>
+ </table>
+</div>
+<div id="main">
+<table id="erc" class="output-table">
+<thead><tr><th colspan="12">Erc</th></tr></thead>
 <tbody><tr>
-<td class="out-cell" colspan="12"><a href="../release/OpenMowerMainboard-diff_pcb.pdf"><table class="out-img"><tr><td><img src="images/cat_diff_pcb_OpenMowerMainboard-diff_pcb.png" alt="OpenMowerMainboard-diff_pcb.pdf" width="256" height="181"></td></tr><tr><td class="td-small">OpenMowerMainboard-diff_pcb.pdf</td></tr></table></a></td>
+<td class="out-cell" colspan="12"><a href="../OpenMowerMainboard-erc.html"><table class="out-img"><tr><td><img src="images/erc.svg_64.png" alt="OpenMowerMainboard-erc.html" width="64" height="64"></td></tr><tr><td class="td-small">OpenMowerMainboard-erc.html</td></tr></table></a></td>
 </tr>
 <tr>
 <td></td>
@@ -28,10 +104,10 @@
 </tr>
 </tbody>
 </table>
-<table class="output-table">
+<table id="diff_sch" class="output-table">
 <thead><tr><th colspan="12">Diff sch: Generates a PDF with the differences between two schematics.</th></tr></thead>
 <tbody><tr>
-<td class="out-cell" colspan="12"><a href="../release/OpenMowerMainboard-diff_sch.pdf"><table class="out-img"><tr><td><img src="images/cat_diff_sch_OpenMowerMainboard-diff_sch.png" alt="OpenMowerMainboard-diff_sch.pdf" width="256" height="181"></td></tr><tr><td class="td-small">OpenMowerMainboard-diff_sch.pdf</td></tr></table></a></td>
+<td class="out-cell" colspan="12"><a href="../release/OpenMowerMainboard-diff_sch.pdf"><table class="out-img"><tr><td><img src="images/cat_diff_sch_OpenMowerMainboard-diff_sch.png" alt="OpenMowerMainboard-diff_sch.pdf" width="256" height="192"></td></tr><tr><td class="td-small">OpenMowerMainboard-diff_sch.pdf</td></tr></table></a></td>
 </tr>
 <tr>
 <td></td>
@@ -49,7 +125,28 @@
 </tr>
 </tbody>
 </table>
-<table class="output-table">
+<table id="kiri" class="output-table">
+<thead><tr><th colspan="12">Kiri: Generates an interactive web page to browse the schematic and/or PCB differences between git commits.</th></tr></thead>
+<tbody><tr>
+<td class="out-cell" colspan="12"><a href="../release/index.html"><table class="out-img"><tr><td><img src="images/icon.svg_64.png" alt="index.html" width="64" height="64"></td></tr><tr><td class="td-small">index.html</td></tr></table></a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table id="pdf_sch_print" class="output-table">
 <thead><tr><th colspan="12">Pdf sch print: Exports the PCB to the most common exchange format. Suitable for printing.</th></tr></thead>
 <tbody><tr>
 <td class="out-cell" colspan="12"><a href="../release/OpenMowerMainboard-schematic.pdf"><table class="out-img"><tr><td><img src="images/cat_pdf_sch_print_OpenMowerMainboard-schematic.png" alt="OpenMowerMainboard-schematic.pdf" width="256" height="181"></td></tr><tr><td class="td-small">OpenMowerMainboard-schematic.pdf</td></tr></table></a></td>
@@ -70,5 +167,34 @@
 </tr>
 </tbody>
 </table>
-<table class="nav-table"> <tr>  <td><a href="OpenMowerMainboard-navigate_Schematic.html"><img src="images/back_64.png" width="64" height="64" alt="go back"></a></td>  <td><a href="OpenMowerMainboard-navigate.html"><img src="images/home_64.png" width="64" height="64" alt="go home"></a></td> </tr></table><p class="generator">Generated by <a href="https://github.com/INTI-CMNB/KiBot/">KiBot</a> v1.6.1</p></body>
+<table class="nav-table"> <tr>  <td><a href="OpenMowerMainboard-navigate_Schematic.html"><img src="images/back_64.png" width="64" height="64" alt="go back"></a></td>  <td><a href="OpenMowerMainboard-navigate.html"><img src="images/home_64.png" width="64" height="64" alt="go home"></a></td> </tr></table><p class="generator">Generated by <a href="https://github.com/INTI-CMNB/KiBot/">KiBot</a> v1.7.0</p>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("theSideNav").style.width = "360px";
+  document.getElementById("main").style.marginLeft = "360px";
+  document.getElementById("theTopMenu").style.marginLeft = "360px";
+  document.getElementById("bmenu").style.display = "none";
+}
+
+function closeNav() {
+  document.getElementById("theSideNav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("theTopMenu").style.marginLeft = "0";
+  document.getElementById("bmenu").style.display = "block";
+}
+
+function ScrollUp() {
+  /* When we come here from the navbar we must scroll to avoid the top menu */
+  var p = document.getElementById("main");
+  var style = p.currentStyle || window.getComputedStyle(p);
+  var m_top = parseInt(style.marginTop)
+
+  window.scrollBy(0, -(m_top + 5));
+}
+
+window.onload = ScrollUp;
+</script>
+</body>
 </html>
