@@ -157,12 +157,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: INTI-CMNB/KiBot@v2_k7
+      - uses: INTI-CMNB/KiBot@v2_k8
         with:
           config: Hardware/OpenMowerMainboard/OpenMowerMainboard.kibot.yaml
           board: Hardware/OpenMowerMainboard/OpenMowerMainboard.kicad_pcb
 
-      - uses: INTI-CMNB/KiBot@v2_k7
+      - uses: INTI-CMNB/KiBot@v2_k8
         with:
           config: Hardware/DockStation/mower_PowerDeviceCarrier.kibot.yaml
           board: Hardware/DockStation/mower_PowerDeviceCarrier.kicad_pcb
