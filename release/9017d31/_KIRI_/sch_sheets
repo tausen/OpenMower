@@ -1,0 +1,15 @@
+OpenMowerMainboard|OpenMowerMainboard.kicad_sch||OpenMowerMainboard|OpenMowerMainboard
+escs|escs.kicad_sch||ESCs|OpenMowerMainboard-ESCs
+GPS|GPS.kicad_sch||GPS|OpenMowerMainboard-GPS
+imu|imu.kicad_sch||IMU|OpenMowerMainboard-IMU
+RaspberryPi|RaspberryPi.kicad_sch||RaspberryPi|OpenMowerMainboard-RaspberryPi
+RobotConnectors|RobotConnectors.kicad_sch||RobotConnectors|OpenMowerMainboard-RobotConnectors
+LEVEL_SHIFTER|LEVEL_SHIFTER.kicad_sch||LevelShifter5|OpenMowerMainboard-RobotConnectors-LevelShifter5
+LEVEL_SHIFTER|LEVEL_SHIFTER.kicad_sch||LevelShifter6|OpenMowerMainboard-RobotConnectors-LevelShifter6
+LEVEL_SHIFTER|LEVEL_SHIFTER.kicad_sch||LevelShifter7|OpenMowerMainboard-RobotConnectors-LevelShifter7
+LEVEL_SHIFTER|LEVEL_SHIFTER.kicad_sch||LevelShifter8|OpenMowerMainboard-RobotConnectors-LevelShifter8
+mosfet_switch|mosfet_switch.kicad_sch||MosfetSwitch|OpenMowerMainboard-RobotConnectors-MosfetSwitch
+dcdc|dcdc.kicad_sch||dcdc|OpenMowerMainboard-dcdc
+opamps|opamps.kicad_sch||opamps|OpenMowerMainboard-opamps
+pico|pico.kicad_sch||pico|OpenMowerMainboard-pico
+sound_module|sound_module.kicad_sch||sound|OpenMowerMainboard-sound

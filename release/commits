@@ -1,0 +1,16 @@
+0e15e3f|2024-06-23|Mathias Tausen|mainboard: landroid battery connector|True|True
+2a93102|2024-06-09|Mathias Tausen|mainboard: fix J16-J23 distance|False|True
+14e9262|2024-06-09|Mathias Tausen|mainboard: remove unused area in middle of board|False|True
+9f1f6b2|2024-06-08|Mathias Tausen|mainboard: no mounting holes, squeeze connectors|False|True
+750ded1|2024-06-01|Mathias Tausen|mainboard: squeeze bottom mid slightly|False|True
+9017d31|2024-05-31|Mathias Tausen|Initial mainboard for Worx Landroid WR105SI|False|True
+385c07a|2024-03-10|Clemens Elflein|upgraded to KiCAD v8|True|True
+531a9a8|2024-02-09|Pavel Veretennikov|fix: address some new DRC issues|False|True
+118c69f|2024-01-12|Pavel Veretennikov|feat: thicker 5V track in the middle|False|True
+01b0bf6|2023-11-12|Pavels Veretennikovs|fix: properly tag power pins on F1|True|False
+7840e18|2023-11-08|Pavels Veretennikovs|feat: bigger pads and thermal relief for MAX2040|False|True
+e5b4e8c|2023-11-08|Pavels Veretennikovs|feat: add F1 PPTC for 3.3V rail|True|True
+67c9136|2023-10-30|Pavels Veretennikovs|fix(k7): disable DRC/ERC violations we can't fix or are bugs|False|True
+a5e2bb1|2023-10-29|Pavels Veretennikovs|fix: add dummy parent footprints where missing|False|True
+1d915d9|2023-10-29|Pavels Veretennikovs|feat: remove J4, put back R7,R13 sound resistors|True|True
+4d98c01|2023-10-29|Pavels Veretennikovs|feat: add imu/max silkscreen, fix 3D models|False|True
