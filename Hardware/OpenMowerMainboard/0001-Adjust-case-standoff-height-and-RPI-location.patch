@@ -1,0 +1,43 @@
+From c97324a554c8132938fe8472cbb72d02e8037dd2 Mon Sep 17 00:00:00 2001
+From: Mathias Tausen <mathias@tausen.dk>
+Date: Thu, 15 Aug 2024 23:16:49 +0200
+Subject: [PATCH] Adjust case standoff height and RPI location
+
+---
+ Hardware/OpenMowerMainboard/OpenMowerMainboard.scad | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/Hardware/OpenMowerMainboard/OpenMowerMainboard.scad b/Hardware/OpenMowerMainboard/OpenMowerMainboard.scad
+index 3dfc05a..fec6465 100644
+--- a/Hardware/OpenMowerMainboard/OpenMowerMainboard.scad
++++ b/Hardware/OpenMowerMainboard/OpenMowerMainboard.scad
+@@ -9,7 +9,7 @@ render = "case"; // [all, case, lid]
+ 
+ /* [Dimensions] */
+ // Height of the PCB mounting stand-offs between the bottom of the case and the PCB
+-standoff_height = 5;
++standoff_height = 10;
+ // PCB thickness
+ pcb_thickness = 1.6;
+ // Bottom layer thickness
+@@ -17,7 +17,7 @@ floor_height = 1.2;
+ // Case wall thickness
+ wall_thickness = 1.2;
+ // Space between the top of the PCB and the top of the case
+-headroom = 21.5;
++headroom = 21.5-9;
+ 
+ /* [M2.5 screws] */
+ // Outer diameter for the insert
+@@ -180,7 +180,7 @@ translate([-179.92, -84.5, 0]) {
+         #connector(-1.75,-1.875,1.75,1.875,1.0);
+ 
+     // RP? rpi-footprints:raspberrypi_2_3 
+-    translate([245.7, 104.09, pcb_top])
++    translate([245.7, 104.09, pcb_top-9])
+     rotate([0, 0, 0])
+         #connector(43.6296,-1.016,64.61,50.1904,21.7);
+ 
+-- 
+2.45.2
+
